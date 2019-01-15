@@ -1,37 +1,30 @@
 .header
   display: flex
   flex-direction: column
-  justify-content: center
+  justify-content: flex-end
   align-items: center
-
-  background: linear-gradient(125deg,$primary 0%, $secondary 120%)
   height: 100vh
-  padding: 0 20px
-  .header_logo
-    height: 200px
-    width: 200px
-    background: $white
-  .header_title
+  width: 100vw
+  background: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%)
+  .title
     +title
-    margin: 20px 0 5px 0
-  .header_subtitle
+    color: $black
+    font-size: 2.3em
+    margin-bottom: 20px
+  .subtitle
     +subtitle
-    margin: 0 0 20px 0
-  .links
-    margin: 20px
-  .joinUs
-    background: $blue
-    border-radius: 1em
-    color: $white
+    color: $black-d
+    font-size: 2em
+    margin-bottom: 50px
+  .previewPic
+    width: 35vw
+  .scrollDown
+    color: $white-l
+    font-family: $font-sb
     font-size: 1.3em
-    margin: 10px
-    padding: 20px
-    transition: all .2s
-    *
-      display: inline-block
-    i
-      transform: translateY(10%)
-    &:hover
-      background: $green-l
-      color: $black-l
-      cursor: pointer
+    margin-top: 30px
+  i
+    font-size: 45px
+    color: $white-l
+    animation: bounce .5s infinite alternate
+    margin-bottom: 50px
